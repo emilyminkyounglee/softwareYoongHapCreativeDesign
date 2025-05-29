@@ -10,6 +10,11 @@ public class Login {
 
 	static Set<String> 이화인회원 = new HashSet<>();
     static Set<String> 유레카회원 = new HashSet<>();
+    
+    public Login()
+    {
+    	//생성자 생성
+    }
 
 	public static void welcome() {
 		// TODO Auto-generated method stub
@@ -106,30 +111,30 @@ public class Login {
 
 
 	
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		welcome();
-		
-		while (true) {
-            loginMenu();
-            System.out.print("input: ");
-            
-            if(input.hasNextInt()) {
-            	int menu = input.nextInt();
-
-                if (menu == 0) 회원가입();
-                else if (menu == 1) 이화인메일();
-                else if (menu == 2) 유레카계정();
-                else System.out.println("다시 입력하세요");//보기에 없는 숫자를 입력했을 경우
-                
-            }
-            else {
-            	System.out.println("숫자로 입력하세요");//숫자가 아니라 문자를 입력했을 경우
-            	input.next();
-            }
-
-		}
-
-	}
+//	public static void main(String[] args) {
+//		// TODO Auto-generated method stub
+//		welcome();
+//		
+//		while (true) {
+//            loginMenu();
+//            System.out.print("input: ");
+//            
+//            if(input.hasNextInt()) {
+//            	int menu = input.nextInt();
+//
+//                if (menu == 0) 회원가입();
+//                else if (menu == 1) 이화인메일();
+//                else if (menu == 2) 유레카계정();
+//                else System.out.println("다시 입력하세요");//보기에 없는 숫자를 입력했을 경우
+//                
+//            }
+//            else {
+//            	System.out.println("숫자로 입력하세요");//숫자가 아니라 문자를 입력했을 경우
+//            	input.next();
+//            }
+//
+//		}
+//
+//	}
 
 }

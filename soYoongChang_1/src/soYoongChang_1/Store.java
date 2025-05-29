@@ -8,10 +8,10 @@ public class Store {
     String name;
     Enum building;
 
-    public Store(String name, String[] menuArray, Enum building) {
+    public Store(String name, List<String> menu , Enum building) {
         this.name = name;
         this.building = building;
-        this.menu = new ArrayList<>(Arrays.asList(menuArray));  // 배열을 ArrayList로 변환
+        this.menu = new ArrayList<>(menu);  // 배열을 ArrayList로 변환
     }
 
     public Enum getBuilding() {
