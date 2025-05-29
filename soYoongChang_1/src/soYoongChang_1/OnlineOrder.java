@@ -18,9 +18,13 @@ public class OnlineOrder {
         return this.stores;
     }
 
-    public OnlineOrder(boolean yesOrder, String[] order, String Store, int minute) {
+    public OnlineOrder( String[] order, String Store) {
         this.order = order;
-        System.out.println("온라인 주문 버튼 클릭");
+    }
+    
+    public void order(boolean yesOrder,  int minute)
+    {
+    	System.out.println("온라인 주문 버튼 클릭");
 
         if (yesOrder) {
             System.out.println("온라인 주문이 완료 되었습니다.");
